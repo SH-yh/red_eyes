@@ -1,0 +1,28 @@
+.works_container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url("./images/works_back.png") no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+.works_show_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1024px;
+  margin:0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.type_1 {
+  width: 170px;
+  height: 252px;
+}
+.type_2 {
+  width: 510px;
+  height: 252px;
+}
+.type_3 {
+  width: 425px;
+  height: 252px;
+}

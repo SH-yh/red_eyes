@@ -1,0 +1,39 @@
+.color_white {
+  color: #fff;
+}
+
+.title_wrap {
+  width: 44%;
+  margin:0 auto;
+  margin-top: 50px;
+  text-align: center;
+  composes: color_white;
+}
+.split_line {
+  position: relative;
+  width: 75%;
+  height:2px;
+  margin:15px auto;
+  background: #cececf;
+}
+.split_line:after {
+  position:absolute;
+  display: block;
+  content: "";
+  width: 45%;
+  height: 4px;
+  top:0px;bottom:0;left:0;right:0;
+  margin: auto;
+  background:#ff0000;
+}
+.title {
+  font-size: 32px;
+  letter-spacing: 0.2em;
+}
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+  text-indent: 2em;
+  text-align: left;
+  letter-spacing: 0.2em;
+}

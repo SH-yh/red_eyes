@@ -1,0 +1,47 @@
+.container {
+  background: #e2e2e2;
+  overflow: hidden;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ffffff;
+  margin: 80px 160px;
+  padding: 20px 40px;
+  box-shadow: 0 0 10px 10px #d6d6d6;
+}
+.left_wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.child_item {
+  flex: 1;
+}
+.item {
+  margin: 40px 0;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.expound {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.teacher_wrap {
+  text-align: center;
+  margin-top: 60px;
+}
+.via {
+  width: 200px;
+  height: auto;
+}
+.teacher_name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}

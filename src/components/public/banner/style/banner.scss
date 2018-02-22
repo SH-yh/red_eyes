@@ -1,0 +1,22 @@
+.banner {
+  overflow: hidden;
+}
+.banner_wrap {
+  width: 400%;
+  display: flex;
+  flex-direction: row;
+  transform: translate(0px, 0);
+  animation: banner 32s 2s linear infinite alternate;
+}
+.banner_img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes banner {
+  from {
+    transform: translate(0px, 0);
+  }
+  to {
+    transform: translate(-75%, 0);
+  }
+}

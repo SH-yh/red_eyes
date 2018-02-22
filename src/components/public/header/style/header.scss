@@ -1,0 +1,45 @@
+@import './public.scss';
+.wrap {
+    composes: display_flex;
+    composes: flex_row ;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 30px;
+    background: url('../images/logo_background.png') no-repeat;
+    background-size: 100% 100%;
+}
+.logo {
+    width: 317px;
+    height: 140px;
+}
+.contact {
+    line-height: 1.35;
+    padding-right: 30px;
+}
+.contact_way {
+    font-size: 32px;
+    composes:font_red;
+    composes: font_style;
+}
+.nav {
+    composes: display_flex;
+    composes: flex_row ;
+    align-items: center;
+}
+.linkItem {
+    flex: 1;
+    background: #c00100;
+    text-align: center;
+}
+.link {
+    display: block;
+    text-decoration: none;
+    padding: 12px 0;
+    color: #000;
+    font-weight: 500;
+    composes: font24;
+}
+.selected {
+    background: #000;
+    color: #fff;
+}

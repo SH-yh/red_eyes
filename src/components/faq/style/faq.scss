@@ -1,0 +1,38 @@
+.color_red {
+  color: #ff0000;
+}
+.faq_log {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.logo {
+  width:395px;
+  height: auto
+}
+.faq_statement_Wrap {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 115px;
+}
+.faq_statement {
+  composes: color_red;
+}
+.faq_container {
+  padding-left: 40px;
+  padding-right:40px;
+}
+.faq_wrap {
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 2;
+}
+.answer {
+  composes: color_red;
+  font-weight: 800;
+  font-size: 20px;
+}
+.question {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

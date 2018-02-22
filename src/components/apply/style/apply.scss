@@ -1,0 +1,193 @@
+
+.content_wrap {
+  width: 800px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin:0 auto;
+  text-align: center;
+}
+.title {
+  font-size: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #c00100;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.content_text {
+  text-align: left;
+  font-size: 20px;
+  line-height: 2;
+  padding-bottom: 60px;
+}
+.content_text p {
+  text-indent: 2em;
+}
+.contact_wrap {
+  background: url("../images/apply_02.png") no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container:last-child .item_icon {
+  width:0;
+  height:0;
+}
+.contact_title {
+  font-size: 32px;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+  color:#dc3736;
+}
+.contact_way_wrap {
+  width:920px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.item_wrap {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  background: #c00100;
+  font-size: 20px;
+  color: #fff;
+}
+.item_icon{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../images/apply_row.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.way_container {
+  width: 920px;
+  margin:0 auto;
+  border-radius: 20px;
+  background: #1f1f1f;
+}
+.way_title {
+  background:#f13a39;
+  font-size: 24px;
+  color:#fff;
+  border-radius: 20px 20px 0 0;
+  text-indent: 2em;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+.way_classify {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.way_icon_QQ {
+  position: relative;
+  width: 200px;
+  height:200px;
+  background: url("../images/apply_QQ_qr.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.way_icon_QQ:before {
+  position: absolute;
+  left: -150px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background:url("../images/apply_QQ.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.way_icon_weChat {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin:0 220px;
+  background: url("../images/apply_weChat_qr.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.way_icon_weChat:before {
+  position: absolute;
+  left: -150px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background:url("../images/apply_weChat.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.way_mobile {
+  position: relative;
+  width: 620px;
+  color: #fff;
+  left: 220px;
+  padding: 10px 0;
+  line-height: 1.5;
+  font-size: 18px;
+  border-top: 1px dashed #6d6d6d;
+}
+.way_mobile_title {
+  font-size: 18px;
+}
+.way_mobile_title:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -150px;
+  width: 60px;
+  height: 60px;
+  background: url("../images/apply_mobile.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.way_mobile span {
+  display: inline-block;
+  margin:0 20px;
+}
+.way_address {
+  composes: way_mobile;
+}
+.way_end {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.map {
+  padding: 20px;
+}
+.map_icon {
+  position: relative;
+  width: 1200px;
+  height: 580px;
+  background: url("../images/apply_map.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  margin:0 auto;
+}
+.map_address {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  font-size: 14px;
+  top:350px;
+  left: 378px;
+  line-height: 2;
+}

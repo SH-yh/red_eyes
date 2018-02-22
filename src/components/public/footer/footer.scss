@@ -1,0 +1,45 @@
+.flex_1 {
+  flex: 1;
+}
+.footer {
+  border-top: 2px solid #fe1414;
+  background: #181818;
+}
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 300px;
+}
+.left {
+  composes: flex_1;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: #cbcbcb;
+}
+.right {
+  composes: flex_1;
+}
+.split_line {
+  height: 240px;
+  width: 2px;
+  background: #989898;
+}
+.mobile_number {
+  font-size: 32px;
+}
+.contact_way {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.qr_Code {
+  width: 600px;
+  height: 260px;
+  background: url("./images/qr_code.png") no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  margin:0 auto;
+}
