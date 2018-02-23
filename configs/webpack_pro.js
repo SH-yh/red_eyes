@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const entryPath = "../src/app.js";
 const outPutPath = "../src/public/bound";
@@ -31,12 +32,16 @@ module.exports = {
             },
             {
                 test: /\.s?css$/,
-                use: ["style-loader", "css-loader?modules", "sass-loader"]
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ["css-loader?modules", "sass-loader"]
+                })
             }
         ]
     },
     plugins: [
         new UglifyJSPlugin(),
+        new ExtractTextPlugin('style.css'),
         new HtmlWebpackPlugin({template: './src/views/index.html'})
     ],
     devtool: "source-map"
