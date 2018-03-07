@@ -5,12 +5,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const entryPath = "../src/app.js";
 const outPutPath = "../src/public/bound";
-const filename = "build.js";
 
 module.exports = {
-    entry: path.resolve(__dirname, entryPath),
+    entry: {
+        build: path.resolve(__dirname, entryPath),
+        vendor: ['react']
+    },
     output: {
-        filename: filename,
+        filename: '[name].js',
         path: path.resolve(__dirname, outPutPath),
     },
     module: {
@@ -25,7 +27,7 @@ module.exports = {
                 use: {
                     loader: "url-loader",
                     options: {
-                        limit: 8192,
+                        limit: 25000,
                         name: "images/[name].[ext]"
                     }
                 }
@@ -42,7 +44,11 @@ module.exports = {
     plugins: [
         new UglifyJSPlugin(),
         new ExtractTextPlugin('style.css'),
-        new HtmlWebpackPlugin({template: './src/views/index.html'})
+        new HtmlWebpackPlugin({
+            template: './src/views/index.html',
+            chunks: ['vendor', 'build'],
+        }),
+        new webpack.optimize.CommonsChunkPlugin({name:'vendor',  filename:'vendor.js'})
     ],
     devtool: "source-map"
 };
